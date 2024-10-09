@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    url: jdbc:postgresql://localhost:5433/woodshop_db
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
